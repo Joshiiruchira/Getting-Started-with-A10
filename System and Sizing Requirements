@@ -1,0 +1,53 @@
+
+Before installing A10 Control, review the deployment options, platform support, and minimum system requirements to ensure a smooth setup and reliable performance.
+
+Deployment Options
+
+A10 Control supports two deployment variants:
+
+A10 Control Lite
+
+Designed for small environments.
+
+Supports ADC and ADO deployments.
+
+Standalone deployment only.
+
+Recommended for managing up to 10 ADC or 5 ADO/TPS devices.
+
+A10 Control Standard
+
+Designed for large enterprises and service providers.
+
+Supports high availability and large-scale deployments.
+
+Supports standalone and 3-node cluster deployments.
+
+Suitable for managing ADC, CGN, ADO, SSLi, and GiFW services.
+
+Supported Platforms
+
+VMware ESXi 8.0 or later
+
+KVM (Red Hat 9.3 or later)
+
+Note: UEFI firmware and NTP configuration are recommended.
+
+Minimum System Requirements
+Deployment Type	CPU	Memory	Disk	Devices
+A10 Control Lite	16 cores	64 GB RAM	700 GB SSD	1
+A10 Control Standard	32 cores	128 GB RAM	700 GB SSD	1
+
+Note: These values are intended for testing and evaluation only, not for production use.
+
+Network Interface Requirements
+
+A10 Control uses two types of interfaces:
+
+Management: For device communication
+
+Data: For analytics data transfer
+
+Standalone deployments require 1 or 2 interfaces, depending on device type.
+
+Multi-node deployments require separate management and data interfaces with floating IPs for high availability.
