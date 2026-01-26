@@ -1,1 +1,2 @@
-A10 is a platform where all the A10 products are managed and analyzed. On the single dashboard you can monitor application traffic and performance. It works for an on premise as well cloud environments.
+A10 control platform is a single dashboard where all the A10 thunder devices are controlled and managed either on premise or cloud providing real time data related to traffic analysis and device performance.
+It supports many organizations and users from single system. Users are assigned with their specific roles and access. They can securely access using MFA.It helps in flexible user and account management. It transmits control messages, metrics, and telemetry data.It adheres to security best practices and enhanced data protection using only SSl encrytions.
