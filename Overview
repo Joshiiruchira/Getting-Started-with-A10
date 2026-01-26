@@ -1,3 +1,3 @@
 A10 control platform is a single dashboard where all the A10 thunder devices are controlled and managed either on premise or cloud providing real time data related to traffic analysis and device performance.
 It supports many organizations and users from single system. Users are assigned with their specific roles and access. They can securely access using MFA.It helps in flexible user and account management. It transmits control messages, metrics, and telemetry data.It adheres to security best practices and enhanced data protection using only SSl encrytions.
-Also, it encourages advance security through network-layer ACLs and encryption.
+Also, it encourages advance security through network-layer ACLs and encryption. This guide is for system administrators, network engineers, and IT teams who want to quickly set up and start using A10 Control.
