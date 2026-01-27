@@ -1,9 +1,9 @@
-**Deployment Variants**
+** Deployment Variants **
 
 | Deployment Type          | Description                                                                                                                                                                                  | Deployment Mode                  | Use Case                                              |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ----------------------------------------------------- |
-| **A10 Control Lite**     | Designed for small-scale enterprises. Provides simplified deployment with lower infrastructure needs. Supports ADC and ADO. Other apps (CGN, SSLi, Gi-FW) may appear but are for trial only. | Standalone only                  | Up to **10 ADC** or **5 ADO/TPS** devices             |
-| **A10 Control Standard** | Designed for large enterprises and service providers. Supports high availability and large-scale deployments.                                                                                | Standalone or **3-node cluster** | Large-scale ADC, CGN, ADO, SSLi, and GiFW deployments |
+| A10 Control Lite    | Designed for small-scale enterprises. Provides simplified deployment with lower infrastructure needs. Supports ADC and ADO. Other apps (CGN, SSLi, Gi-FW) may appear but are for trial only. | Standalone only                  | Up to **10 ADC** or **5 ADO/TPS** devices             |
+| A10 Control Standard | Designed for large enterprises and service providers. Supports high availability and large-scale deployments.                                                                                | Standalone or **3-node cluster** | Large-scale ADC, CGN, ADO, SSLi, and GiFW deployments |
 
 **Platform Requiremts**
 
