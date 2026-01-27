@@ -1,11 +1,11 @@
-## Deployment Variants ##
+## Deployment Variants
 
 | Deployment Type          | Description                                                                                                                                                                                  | Deployment Mode                  | Use Case                                              |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ----------------------------------------------------- |
 | A10 Control Lite    | Designed for small-scale enterprises. Provides simplified deployment with lower infrastructure needs. Supports ADC and ADO. Other apps (CGN, SSLi, Gi-FW) may appear but are for trial only. | Standalone only                  | Up to **10 ADC** or **5 ADO/TPS** devices             |
 | A10 Control Standard | Designed for large enterprises and service providers. Supports high availability and large-scale deployments.                                                                                | Standalone or **3-node cluster** | Large-scale ADC, CGN, ADO, SSLi, and GiFW deployments |
 
-## Platform Requiremts ##
+## Platform Requiremts
 
 | Component  | Requirement                    |
 | ---------- | ------------------------------ |
@@ -14,20 +14,20 @@
 | Firmware   | UEFI recommended               |
 | Time Sync  | NTP must be enabled            |
 
-## Minimum System Requirements ##
+## Minimum System Requirements
 
-**Note**: These values are for evaluation or lab use only and are not recommended for production.
+**Note** : These values are for evaluation or lab use only and are not recommended for production.
 
 | Deployment Type          | CPU (Cores) | Memory (RAM) | Disk (SSD) | Supported Devices |
 | ------------------------ | ----------- | ------------ | ---------- | ----------------- |
-| **A10 Control Lite**     | 16          | 64 GB        | 700 GB     | 1                 |
-| **A10 Control Standard** | 32          | 128 GB       | 700 GB     | 1                 |
+| A10 Control Lite     | 16          | 64 GB        | 700 GB     | 1                 |
+| A10 Control Standard | 32          | 128 GB       | 700 GB     | 1                 |
 
-Deployment Readiness Check
+## Deployment Readiness Check
 
 Before starting the installation, make sure the following items are ready:
 
-Required Files
+### Required Files
 
 A10 Control image file (ISO): Download the image from the A10 Networks Support portal.
 
