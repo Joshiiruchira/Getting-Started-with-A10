@@ -27,33 +27,29 @@
 
 Before starting the installation, make sure the following items are ready:
 
-### Required Files
+**Required Files**
 
 A10 Control image file (ISO): Download the image from the A10 Networks Support portal.
 
-Deployment Planning
+**Deployment Planning**
 
 Number of nodes: Decide whether you are deploying a standalone node or a multi-node cluster. For guidance, see System and Sizing Requirements.
 
-Network Configuration Details
+**Network Configuration Details**
 
 Have the following network information available:
 
-Interface IP addresses: IP addresses assigned to each A10 Control interface.
+1. Interface IP addresses: IP addresses assigned to each A10 Control interface.
+2. Gateway IP address: Default gateway for the subnet.
+3. Floating IP address: Virtual IP used to access the A10 Control GUI and APIs.
 
-Gateway IP address: Default gateway for the subnet.
+**Notes**:
 
-Floating IP address: Virtual IP used to access the A10 Control GUI and APIs.
+* IPv6 addressing is supported from ACOS 7_0_1-P1 and later.
+* SSH access is supported only through the interface IP address. SSH access using the floating IP is not supported.
+* For standalone deployments with multiple interfaces and for multi-node deployments, GUI access is available through the floating IP of     the management interface.
 
-Notes:
-
-IPv6 addressing is supported from ACOS 7_0_1-P1 and later.
-
-SSH access is supported only through the interface IP address. SSH access using the floating IP is not supported.
-
-For standalone deployments with multiple interfaces and for multi-node deployments, GUI access is available through the floating IP of the management interface.
-
-Time and Name Resolution
+**Time and Name Resolution**
 
 NTP server IP address: Used for time synchronization.
 
@@ -62,22 +58,16 @@ DNS server IP address: Used for resolving hostnames and application URLs.
 Note:
 If DNS is not configured, A10 Control cannot resolve the URLs of integrated services such as LDAP, SMTP, and A10 Global License Manager.
 
-Download the A10 Control Image File
+#### Download the A10 Control Image File
 
 Follow these steps to download the A10 Control software image:
 
-Open a supported web browser and go to the A10 Networks Support Portal.
-
-Log in using your A10 Networks account credentials.
-
-Go to Software Downloads and Documentation.
-
-Select the Software tab.
-
-Navigate to the A10 Control section.
-
-Download the required image file:
-
+1. Open a supported web browser and go to the A10 Networks Support Portal.
+2. Log in using your A10 Networks account credentials.
+3. Go to Software Downloads and Documentation.
+4. Select the Software tab.
+5. Navigate to the A10 Control section.
+6. Download the required image file:
 A10 Control ISO
 
 After the download is complete, verify the file and keep it ready for deployment.
