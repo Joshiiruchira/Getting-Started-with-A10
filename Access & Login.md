@@ -1,6 +1,6 @@
 This section explains how to log in to A10 Control for the first time using both the web interface (GUI) and the command-line interface (CLI).
 
-1. First-Time Login
+### First-Time Login
 
 After A10 Control installation is complete, the system is ready for login.
 
@@ -10,7 +10,7 @@ You can access A10 Control using:
 
 2. CLI is used mainly for troubleshooting and maintenance
 
-Log in using GUI
+#### Log in using GUI
 
 Follow these steps to log in using a web browser:
 
@@ -22,7 +22,7 @@ Follow these steps to log in using a web browser:
 6. Review and accept the License Agreement to continue.
 7. After successful login, the A10 Control Home page is displayed.
 
-Log in using CLI 
+#### Log in using CLI 
 
 The CLI console is used for troubleshooting and maintenance tasks.
 
