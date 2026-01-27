@@ -1,53 +1,83 @@
+Deployment Variants
 
-Before installing A10 Control, review the deployment options, platform support, and minimum system requirements to ensure a smooth setup and reliable performance.
+| Deployment Type          | Description                                                                                                                                                                                  | Deployment Mode                  | Use Case                                              |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ----------------------------------------------------- |
+| **A10 Control Lite**     | Designed for small-scale enterprises. Provides simplified deployment with lower infrastructure needs. Supports ADC and ADO. Other apps (CGN, SSLi, Gi-FW) may appear but are for trial only. | Standalone only                  | Up to **10 ADC** or **5 ADO/TPS** devices             |
+| **A10 Control Standard** | Designed for large enterprises and service providers. Supports high availability and large-scale deployments.                                                                                | Standalone or **3-node cluster** | Large-scale ADC, CGN, ADO, SSLi, and GiFW deployments |
 
-Deployment Options
+Platform Requiremts
 
-A10 Control supports two deployment variants:
-
-A10 Control Lite
-
-Designed for small environments.
-
-Supports ADC and ADO deployments.
-
-Standalone deployment only.
-
-Recommended for managing up to 10 ADC or 5 ADO/TPS devices.
-
-A10 Control Standard
-
-Designed for large enterprises and service providers.
-
-Supports high availability and large-scale deployments.
-
-Supports standalone and 3-node cluster deployments.
-
-Suitable for managing ADC, CGN, ADO, SSLi, and GiFW services.
-
-Supported Platforms
-
-VMware ESXi 8.0 or later
-
-KVM (Red Hat 9.3 or later)
-
-Note: UEFI firmware and NTP configuration are recommended.
+| Component  | Requirement                    |
+| ---------- | ------------------------------ |
+| Hypervisor | VMware ESXi **8.0 or later**   |
+| Hypervisor | KVM (Red Hat **9.3 or later**) |
+| Firmware   | UEFI recommended               |
+| Time Sync  | NTP must be enabled            |
 
 Minimum System Requirements
-Deployment Type	CPU	Memory	Disk	Devices
-A10 Control Lite	16 cores	64 GB RAM	700 GB SSD	1
-A10 Control Standard	32 cores	128 GB RAM	700 GB SSD	1
 
-Note: These values are intended for testing and evaluation only, not for production use.
+Note: These values are for evaluation or lab use only and are not recommended for production.
 
-Network Interface Requirements
+| Deployment Type          | CPU (Cores) | Memory (RAM) | Disk (SSD) | Supported Devices |
+| ------------------------ | ----------- | ------------ | ---------- | ----------------- |
+| **A10 Control Lite**     | 16          | 64 GB        | 700 GB     | 1                 |
+| **A10 Control Standard** | 32          | 128 GB       | 700 GB     | 1                 |
 
-A10 Control uses two types of interfaces:
+Deployment Readiness Check
 
-Management: For device communication
+Before starting the installation, make sure the following items are ready:
 
-Data: For analytics data transfer
+Required Files
 
-Standalone deployments require 1 or 2 interfaces, depending on device type.
+A10 Control image file (ISO): Download the image from the A10 Networks Support portal.
 
-Multi-node deployments require separate management and data interfaces with floating IPs for high availability.
+Deployment Planning
+
+Number of nodes: Decide whether you are deploying a standalone node or a multi-node cluster. For guidance, see System and Sizing Requirements.
+
+Network Configuration Details
+
+Have the following network information available:
+
+Interface IP addresses: IP addresses assigned to each A10 Control interface.
+
+Gateway IP address: Default gateway for the subnet.
+
+Floating IP address: Virtual IP used to access the A10 Control GUI and APIs.
+
+Notes:
+
+IPv6 addressing is supported from ACOS 7_0_1-P1 and later.
+
+SSH access is supported only through the interface IP address. SSH access using the floating IP is not supported.
+
+For standalone deployments with multiple interfaces and for multi-node deployments, GUI access is available through the floating IP of the management interface.
+
+Time and Name Resolution
+
+NTP server IP address: Used for time synchronization.
+
+DNS server IP address: Used for resolving hostnames and application URLs.
+
+Note:
+If DNS is not configured, A10 Control cannot resolve the URLs of integrated services such as LDAP, SMTP, and A10 Global License Manager.
+
+Download the A10 Control Image File
+
+Follow these steps to download the A10 Control software image:
+
+Open a supported web browser and go to the A10 Networks Support Portal.
+
+Log in using your A10 Networks account credentials.
+
+Go to Software Downloads and Documentation.
+
+Select the Software tab.
+
+Navigate to the A10 Control section.
+
+Download the required image file:
+
+A10 Control ISO
+
+After the download is complete, verify the file and keep it ready for deployment.
