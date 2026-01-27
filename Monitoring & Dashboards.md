@@ -1,6 +1,6 @@
 The A10 Control interface is clean and easy to use. It helps you quickly find options, manage devices, and monitor system performance.
 
-## Dashboard
+## Screen Overview
 1. Top Bar
 
 On the top bar, you can see the following:
