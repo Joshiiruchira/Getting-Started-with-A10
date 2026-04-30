@@ -26,6 +26,8 @@ Follow these steps to log in using a web browser:
 
 The CLI console is used for troubleshooting and maintenance tasks.
 
+### New Sample title
+
 To log in using the CLI console, enter your username and password.
 To change the CLI password, run:
 
